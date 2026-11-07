@@ -17,5 +17,11 @@ Then visit `http://localhost:8000`.
 
 ## Deploy
 
-The site is plain HTML, CSS, and JavaScript with no build step. Deploy the project
-root as a static site on Vercel.
+The site is plain HTML, CSS, and JavaScript with no build step. Every push to
+`main` runs the GitHub Actions workflow in `.github/workflows/pages.yml` and
+publishes the project root to GitHub Pages. The site will be available at
+`https://alabamacashing.github.io/personalinjurysite/`.
+
+GitHub Pages must use **GitHub Actions** as its build and deployment source in
+the repository's Pages settings. Vercel can also be used as a separate hosting
+target.
